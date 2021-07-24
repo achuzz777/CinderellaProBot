@@ -58,8 +58,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-🤹I'm built in python3, using the python-telegram-bot library,you can find what makes me tick [here](https://t.me/Perfect_vazha)
-🍄You Can Clone Me [Here](https://github.com/t.me/perfectvazha)
+[DEV👨🏻‍💻](https://t.me/Perfect_vazha)
 """
 
 
@@ -179,8 +178,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="🚴Help",callback_data="help_back"),InlineKeyboardButton(text="Creator👨🏻‍💻",url="https://t.me/Perfectvazha")]]
-    keyboard += [[InlineKeyboardButton(text="🌈Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="Add Me⚡",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="HELP⚡",callback_data="help_back"),InlineKeyboardButton(text="OWNER👨🏻‍💻",url="https://t.me/Perfectvazha")]]
+    keyboard += [[InlineKeyboardButton(text="🌈Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="Add Me♥️",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
