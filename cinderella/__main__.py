@@ -28,8 +28,13 @@ from cinderella.modules.connection import connect_button
 
 PM_START_TEXT = """
 _Hello_ *{}*
-_My name is_ *{}*\n_A Powerful Telegram ProBot to Manage Your Groups,feel free to add to your groups!!_
-_Maintained by_ [{}](tg://user?id={})
+_My name is_ *{}*\n_I am an advanced group management bot by @AbhinaveS 🦋
+I can manage your group very easily🧚‍♀ & safely🔒. You can keep trust on me without any doubt💯I am like a public userbot🔥
+
+Try using me!⚡️
+
+/help Use For Get Command❤️_
+_MY MastEr👨‍💻_ [{}](tg://user?id={})
 """
 
 
@@ -41,7 +46,6 @@ the things I can help you with.
  👾 - /start: start the bot
  🌟 - /help: PM's you this message.
  📌 - /help <module name>: PM's you info about that module.
- 🌈 - /source: Information about my source.
  💠 - /settings:
    🔹 - in PM: will send you your settings for all supported modules.
    🔹 - in a group: will redirect you to pm, with all that chat's settings.
@@ -58,7 +62,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-[DEV👨🏻‍💻](https://t.me/Perfect_vazha)
+[DEV👨🏻‍💻](https://t.me/Abhinave)
 """
 
 
