@@ -74,7 +74,7 @@ def info(bot: Bot, update: Update, args: List[str]):
    
 
     if user.id == OWNER_ID:
-        text += "\n🚶🏻‍♂️Uff,This person is my Owner🤴\nI would never do anything against him!."
+        text += "\n🚶🏻‍♂️Uff,This person is my Owner🔥\nI would never do anything against him!🤣😏."
         
     elif user.id in DEV_USERS:
         text += "\n🚴‍♂️Pling,This person is my dev🤷‍♂️\nI would never do anything against him!."
