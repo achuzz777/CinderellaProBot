@@ -283,7 +283,7 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="HELP💘💥",url="t.me/{}?start=help".format(bot.username))],  
+                                                [[InlineKeyboardButton(text="HELP💘",url="t.me/{}?start=help".format(bot.username))],  
                                                 [InlineKeyboardButton(text="👨‍💻Contact Owner",url="https://t.me/Abhinave")]]))
         return
 
