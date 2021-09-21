@@ -29,7 +29,7 @@ from cinderella.modules.connection import connect_button
 PM_START_TEXT = """
 _Hello_ *{}*
 _My name is_ *{}*\n_I am an advanced group management bot by @AbhinaveSuresh 🦋
-I can manage your group very easily🧚‍♀ & safely🔒. You can keep trust on me without any doubt💯I am like a public userbot🔥
+I can manage your group very easily🧚‍♀ & safely🔒. You can keep trust on me without any doubt💯
 
 Try using me!⚡️
 
@@ -183,8 +183,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="HELP⚡",callback_data="help_back"),InlineKeyboardButton(text="How To Use Me😉",url="https://t.me/SaraUpdates")]]
-    keyboard += [[InlineKeyboardButton(text="🌈Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="Add Me♥️",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="HELP⚡",callback_data="help_back"),InlineKeyboardButton(text="Developer👨‍💻",url="https://t.me/Abhinave_s")]]
+    keyboard += [[InlineKeyboardButton(text="🌈Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="Add Me🎯",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
