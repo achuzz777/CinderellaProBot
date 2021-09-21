@@ -28,13 +28,14 @@ from cinderella.modules.connection import connect_button
 
 PM_START_TEXT = """
 _Hello_ *{}*
-_My name is_ *{}*\n_I am an advanced group management bot by @AbhinaveS 🦋
+_My name is_ *{}*\n_I am an advanced group management bot by @AbhinaveSuresh 🦋
 I can manage your group very easily🧚‍♀ & safely🔒. You can keep trust on me without any doubt💯I am like a public userbot🔥
 
 Try using me!⚡️
 
 /help Use For Get Command❤️_
-_MY MastEr👨‍💻_ [{}](tg://user?id={})
+
+Any Doubt.. Contact My Developer✨
 """
 
 
@@ -62,7 +63,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-[DEV👨🏻‍💻](https://t.me/Abhinave)
+[DEV👨🏻‍💻](https://t.me/Abhinave_s)
 """
 
 
@@ -283,8 +284,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="HELP💘",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="👨‍💻Contact Owner",url="https://t.me/Abhinave")]]))
+                                                [[InlineKeyboardButton(text="HELP🎀",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="DEV👨‍💻",url="https://t.me/Abhinave_s")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
